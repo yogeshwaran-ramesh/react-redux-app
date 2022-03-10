@@ -1,15 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { createStore, combineReducers } from "redux";
 
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import counter from "./reducers/counter";
-
-const rootReducer = combineReducers({ counter });
-const store = createStore(rootReducer);
+import store from "./store";
 
 ReactDOM.render(
   <React.StrictMode>

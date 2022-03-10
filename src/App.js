@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 
-import { increaseCount, decreaseCount } from "./actions/counter";
+import { increaseCount, decreaseCount } from "./store/actions/counter";
 
 function App() {
   const dispatch = useDispatch();
